@@ -1,0 +1,26 @@
+import hsa.Stdin;
+public class ColourGuess {
+    public static void main (String[] args) {
+        char letter;
+        System.out.println("Enter the first letter of your favourite colour!");
+        letter = Stdin.readChar();
+        if (letter == 'r') {
+            System.out.println("Your favourite colour is probably RED.");
+        } else if (letter == 'b') {
+            System.out.println("Your favourite colour is probably BLUE.");
+        } else if (letter == 'g') {
+            System.out.println("Your favourite colour is probably GREEN");
+        } else if (letter == 'p') {
+            System.out.println("Your favourite colour is probably PURPLE.");
+        } else if (letter == 'o') {
+            System.out.println("Your favourite colour is probably ORANGE.");
+        } else if (letter == 'y') {
+            System.out.println("Your favourite colour is probably YELLOW.");
+        } else {
+            System.out.println("I am not sure what your favourite colour is!");
+        }
+    }
+}
+
+
+
