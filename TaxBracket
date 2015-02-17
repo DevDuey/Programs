@@ -1,0 +1,13 @@
+import hsa.Stdin;
+public class TaxBracket {
+    public static void main (String[] args) {
+        int income;
+        System.out.println("Enter income.");
+        income = Stdin.readInt();
+        if (87850<income&&income<183250) {
+            System.out.println("Yes, the unmaried American taxpayer is in the 28% tax bracket.");
+        } else {
+            System.out.println("No, the unmaried American taxpayer is not in the 28% tax bracket.");
+        }
+    }
+}
