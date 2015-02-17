@@ -1,0 +1,25 @@
+import hsa.Stdin;
+public class TirePressure {
+    public static void main (String[] args) {
+        int requiredpressure, tire1, tire2, tire3, tire4, x4pressure, x4requiredpressure;
+        System.out.println("Enter what pressure your tires should be at.");
+        requiredpressure = Stdin.readInt();
+        System.out.println("Tire #1 pressure?");
+        tire1 = Stdin.readInt();
+        System.out.println("Tire #2 pressure?");
+        tire2 = Stdin.readInt();
+        System.out.println("Tire #3 pressure?");
+        tire3 = Stdin.readInt();
+        System.out.println("Tire #4 pressure?");
+        tire4 = Stdin.readInt();
+        x4pressure = tire1+tire2+tire3+tire4;
+        x4requiredpressure = requiredpressure * 4;
+        if (x4pressure == x4requiredpressure) {
+            System.out.println("Congratulations, your tires are all at the required pressure.");
+        } else {
+            System.out.println("Your tires are not at the required pressure.");
+            System.out.println("Make sure your tires are all at the same pressure");
+            System.out.println("and that it is at the required pressure.");
+        }
+    }
+}
